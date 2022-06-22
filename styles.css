@@ -1,0 +1,73 @@
+html {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+#banner {
+    background-image: url("./Rectangle\ 5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+#movies {
+    padding: 30px;
+}
+
+.scroll {
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .card { 
+    flex: auto;
+    flex-shrink: 0;
+    max-width: 300px;
+    padding: 0 !important;
+  }
+
+  .card-body {
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 0 !important;
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+    .card {
+        max-width: 120px;
+    }
+
+    .card-body {
+        width: 120px;
+        height: 120px;
+    }
+    #banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .img{
+        width: 120px !important;
+        height: 120px !important;
+    }
+  }
