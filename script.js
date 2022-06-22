@@ -11,7 +11,7 @@ async function getMovie() {
     const image10 = document.querySelector("#image10");
 
     
-    const apiUrl = "http://www.omdbapi.com/?s=mon&apikey=143ff951&type=movie"
+    const apiUrl = "https://www.omdbapi.com/?s=mon&apikey=143ff951&type=movie"
 
     const response = await fetch(apiUrl);
     const data = await response.json();
